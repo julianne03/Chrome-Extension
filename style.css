@@ -20,8 +20,14 @@ body {
   justify-content: center;
   align-items: center;
   opacity: 1;
+  flex-direction: column;
 }
 
 .js-clock {
   font-size: 100px;
+}
+
+.js-today-container {
+  align-self: flex-start;
+  padding-left: 15%;
 }
