@@ -23,11 +23,28 @@ body {
   flex-direction: column;
 }
 
+button {
+  border: none;
+  background-color: white;
+  padding: 13px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
 .js-clock {
   font-size: 100px;
 }
 
 .js-today-container {
   align-self: flex-start;
-  padding-left: 15%;
+  padding-left: 2%;
 }
