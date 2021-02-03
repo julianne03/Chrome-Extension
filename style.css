@@ -21,6 +21,12 @@ body {
   align-items: center;
   opacity: 1;
   flex-direction: column;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.wrapper {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 button {
@@ -38,13 +44,91 @@ button {
 button:hover {
   background-color: black;
   color: white;
+  display: inline-block;
 }
 
-.js-clock {
+.stopwatch-btn {
+  padding: 5%;
+  text-align: center;
+}
+
+.js-clock,
+.js-stopwatch,
+.js-timer {
   font-size: 100px;
 }
 
-.js-today-container {
-  align-self: flex-start;
-  padding-left: 2%;
+.js-stopwatch {
+  font-family: sans-serif;
+}
+
+.start {
+  border: 1px solid yellowgreen;
+  color: yellowgreen;
+  margin: 1%;
+}
+.pause {
+  border: 1px solid red;
+  color: red;
+  margin: 1%;
+}
+.reset {
+  border: 1px solid blue;
+  color: blue;
+  margin: 1%;
+}
+
+.start:hover {
+  background-color: yellowgreen;
+  color: white;
+}
+
+.pause:hover {
+  background-color: red;
+  color: white;
+}
+
+.reset:hover {
+  background-color: blue;
+  color: white;
+}
+
+.record-list {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+}
+
+li {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.showing {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.no-showing {
+  animation: fadeOut 1s ease-in-out forwards;
 }
