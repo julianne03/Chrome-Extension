@@ -29,6 +29,10 @@ body {
   padding-right: 5%;
 }
 
+.wrapper div {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
 button {
   border: none;
   background-color: white;
