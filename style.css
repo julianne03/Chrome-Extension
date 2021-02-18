@@ -33,6 +33,15 @@ body {
   animation: fadeIn 1s ease-in-out forwards;
 }
 
+#btn-group {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  outline: none;
+}
+
 button {
   border: none;
   background-color: white;
@@ -45,7 +54,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+#btn-group button:hover {
   background-color: black;
   color: white;
   display: inline-block;
