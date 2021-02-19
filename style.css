@@ -66,8 +66,7 @@ button {
 }
 
 .js-clock,
-.js-stopwatch,
-.js-timer {
+.js-stopwatch {
   font-size: 100px;
 }
 
