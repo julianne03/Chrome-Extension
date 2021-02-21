@@ -1,0 +1,56 @@
+const body = document.querySelector("body"),
+    clock = document.querySelector("#clock"),
+    stopwatch = document.querySelector("#stopwatch"),
+    d_day = document.querySelector("#d-day"),
+    wrapper = document.querySelector(".wrapper");
+
+const IMG_NUMBER = 5;
+
+function handleDday() {
+    if (wrapper.hasChildNodes()) {
+        wrapper.innerHTML = "";
+        $(".wrapper").load("d_day.html");
+    } else {
+        $(".wrapper").load("d_day.html");
+    }
+}
+
+function handleStopWatch() {
+    if (wrapper.hasChildNodes()) {
+        wrapper.innerHTML = "";
+        $(".wrapper").load("stopwatch.html");
+    } else {
+        $(".wrapper").load("stopwatch.html");
+    }
+}
+
+function handleClock() {
+    if (wrapper.hasChildNodes()) {
+        wrapper.innerHTML = "";
+        $(".wrapper").load("clock.html");
+    } else {
+        $(".wrapper").load("clock.html");
+    }
+}
+
+function paintImage(imgNumber) {
+    const image = new Image();
+    image.src = `images/${imgNumber+1}.jpg`;
+    image.classList.add('bgImage');
+    body.prepend(image);
+}
+
+function getRandom() {
+    const number = Math.floor(Math.random() * IMG_NUMBER);
+    return number;
+}
+
+function init() {
+    const randomNum = getRandom();
+    paintImage(randomNum);
+    clock.addEventListener("click", handleClock);
+    stopwatch.addEventListener("click", handleStopWatch);
+    d_day.addEventListener("click", handleDday);
+}
+
+init();
