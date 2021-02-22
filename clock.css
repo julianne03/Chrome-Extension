@@ -1,0 +1,17 @@
+.js-clock-container {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.date-text {
+  color: white;
+  font-size: 1rem;
+  vertical-align: top;
+}
+
+.time-text {
+  color: white;
+  margin-left: 1%;
+  font-size: 6rem;
+}
