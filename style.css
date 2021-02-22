@@ -54,7 +54,7 @@ body {
   margin-left: 1%;
 }
 
-button {
+#btn-group button {
   border: none;
   background-color: rgba(255, 255, 255, 0);
   padding: 13px 15px;
@@ -70,65 +70,6 @@ button {
 
 #btn-group button:hover {
   color: white;
-}
-
-.stopwatch-btn {
-  padding: 5%;
-  text-align: center;
-}
-
-.js-clock,
-.js-stopwatch {
-  font-size: 100px;
-}
-
-.js-stopwatch {
-  font-family: sans-serif;
-}
-
-.start {
-  border: 1px solid yellowgreen;
-  color: yellowgreen;
-  margin: 1%;
-}
-.pause {
-  border: 1px solid red;
-  color: red;
-  margin: 1%;
-}
-.reset {
-  border: 1px solid blue;
-  color: blue;
-  margin: 1%;
-}
-
-.start:hover {
-  background-color: yellowgreen;
-  color: white;
-}
-
-.pause:hover {
-  background-color: red;
-  color: white;
-}
-
-.reset:hover {
-  background-color: blue;
-  color: white;
-}
-
-.record-list {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-ul {
-  text-align: center;
-}
-
-li {
-  display: block;
 }
 
 @keyframes fadeIn {
