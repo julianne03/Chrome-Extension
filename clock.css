@@ -4,6 +4,10 @@
   display: block;
 }
 
+.js-stopwatch-container {
+  display: none;
+}
+
 .date-text {
   color: white;
   font-size: 1rem;
