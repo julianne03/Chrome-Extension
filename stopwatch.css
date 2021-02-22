@@ -1,0 +1,52 @@
+.js-clock-container {
+  display: none;
+}
+
+.js-stopwatch-container {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.stopwatch-btn {
+  padding: 5%;
+  text-align: center;
+}
+
+.stopwatch-time {
+  font-size: 7rem;
+  color: white;
+}
+
+#start {
+  border: none;
+  background: none;
+  color: rgba(153, 205, 50, 0.486);
+  margin: 1%;
+  font-size: 2rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+  text-shadow: 1px 1px 0px white;
+}
+
+#stop {
+  border: none;
+  background: none;
+  color: rgba(255, 0, 0, 0.445);
+  margin: 1%;
+  font-size: 2rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+  text-shadow: 1px 1px 0px white;
+}
+
+#start:hover {
+  color: yellowgreen;
+}
+
+#stop:hover {
+  color: red;
+}
