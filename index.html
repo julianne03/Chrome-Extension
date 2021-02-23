@@ -31,9 +31,25 @@
                     <button type="button" id="stop">STOP</button>
                 </div>
             </div>
+            <div class="js-d-day-container">
+                <form class="js-d-day-form">
+                    <input class="input-event" type="text" maxlength="10" required>
+                    <input class="input-date" type="date" required>
+                    <button class="d-day-btn" type="submit"></button>
+                </form>
+                <div class="print-d-day">
+                    <div>
+                        <span class="event-text">D - Day</span>
+                    </div>
+                    <div class="date-container">
+                        <span id="days">200</span><span class="date-text">일</span><span id="hours">4</span><span class="date-text">시</span><span id="minutes">30</span><span class="date-text">분</span><span id="seconds">20</span><span class="date-text">초</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
     <script src="script.js"></script>
     <script src="clock.js"></script>
     <script src="stopwatch.js"></script>
+    <script src="d_day.js"></script>
 </html>

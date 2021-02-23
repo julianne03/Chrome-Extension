@@ -9,6 +9,10 @@
   font-family: sans-serif;
 }
 
+.js-d-day-container {
+  display: none;
+}
+
 .stopwatch-btn {
   padding: 5%;
   text-align: center;

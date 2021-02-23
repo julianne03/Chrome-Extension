@@ -1,0 +1,35 @@
+.js-clock-container {
+  display: none;
+}
+
+.js-stopwatch-container {
+  display: none;
+}
+
+.js-d-day-container {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.event-text {
+  font-size: 2rem;
+  color: white;
+}
+
+.date-container {
+  color: white;
+  font-size: 1rem;
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+  font-size: 7rem;
+}
+
+.date-text {
+  color: white;
+  margin-right: 3%;
+}
