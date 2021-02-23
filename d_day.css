@@ -7,13 +7,46 @@
 }
 
 .js-d-day-container {
-  display: block;
+  display: flex;
   width: 100%;
   text-align: center;
+  align-content: center;
+  background-position: center center;
+  justify-content: center;
+  align-items: center;
 }
 
 .js-d-day-container form {
+  display: block;
+  width: 40%;
   animation: fadeIn 1s ease-in-out forwards;
+}
+
+.print-d-day {
+  display: block;
+  width: 100%;
+}
+
+input {
+  background: none;
+  appearance: none;
+  border: 0;
+  font-size: 22px;
+  color: white;
+  width: 100%;
+  border-bottom: 2px solid white;
+  text-align: center;
+  margin-bottom: 8%;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
 }
 
 .event-text {
@@ -38,19 +71,21 @@
   margin-right: 3%;
 }
 
+.d-day-btn,
 .d-day-reset {
   border: none;
   background: none;
   padding: 13px 15px;
   text-align: center;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   transition-duration: 0.4s;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.438);
   outline: none;
 }
 
+.d-day-btn:hover,
 .d-day-reset:hover {
   color: white;
 }
