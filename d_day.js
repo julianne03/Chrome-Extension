@@ -7,7 +7,8 @@ const d_day_container = document.querySelector(".js-d-day-container"),
     span_days = document.querySelector("#days"),
     span_hours = document.querySelector("#hours"),
     span_minutes = document.querySelector("#minutes"),
-    span_seconds = document.querySelector("#seconds");
+    span_seconds = document.querySelector("#seconds"),
+    d_day_reset = document.querySelector(".d-day-reset");
 
 function formatTime(time) {
     return  Math.abs(time) < 10 ? (`0${Math.abs(time)}`) : Math.abs(time);
@@ -58,6 +59,8 @@ function handleEventSubmit(event) {
 
 function askDday() {
     print_d_day.style.display = 'none';
+    const form = document.querySelector(".js-d-day-form");
+    form.style.display = 'block';
     const submit_btn = document.querySelector(".d-day-btn");
     submit_btn.addEventListener("click", handleEventSubmit);
 }
@@ -73,6 +76,11 @@ function loadDday() {
     }
 }
 
+function handleReset() {
+    localStorage.clear();
+    loadDday();
+}
+
 function handleClick() {
     const page_style = document.querySelector("#page-style");
     page_style.href = "d_day.css";
@@ -81,6 +89,7 @@ function handleClick() {
 
 function init() {
     d_day.addEventListener('click', handleClick);
+    d_day_reset.addEventListener('click', handleReset);
 }
 
 init();
