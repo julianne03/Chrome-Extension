@@ -39,30 +39,26 @@ function handleStop() {
     if(timerStart) {
         clearInterval(timerStart)
 
-        if(this.innerText == 'STOP') {
+        if(stopBtn.innerText == 'STOP') {
             endTime = Date.now()
             stopBtn.innerText = 'RESET';
             startBtn.innerText = 'RESTART';
         } else {
-            handleReset();
+            startTime = 0;
+            m = 0;
+            s = 0;
+            mil = 0;
+
+            min.innerText = '00';
+            sec.innerText = '00';
+            milsec.innerText = '00';
+
+            startBtn.innerText = 'START';
+            stopBtn.innerText = 'STOP';
+            timerStart = null;
         }
         
     }
-}
-
-function handleReset() {
-    startTime = 0;
-    m = 0;
-    s = 0;
-    mil = 0;
-
-    min.innerText = '00';
-    sec.innerText = '00';
-    milsec.innerText = '00';
-
-    startBtn.innerText = 'START';
-    stopBtn.innerText = 'STOP';
-    timerStart = null;
 }
 
 function addZero(num) {
