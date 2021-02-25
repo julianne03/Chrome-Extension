@@ -71,7 +71,7 @@ function addZero(num) {
 
 function handleClick() {
     const page_style = document.querySelector("#page-style");
-    page_style.href = "stopwatch.css";
+    page_style.href = "css/stopwatch.css";
     startBtn.addEventListener('click', handleStart);
     stopBtn.addEventListener('click', handleStop);
 }

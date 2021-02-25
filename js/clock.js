@@ -27,7 +27,7 @@ function getTime() {
 
 function handleClick() {
     const page_style = document.querySelector("#page-style");
-    page_style.href = "clock.css";
+    page_style.href = "css/clock.css";
     showClock();
 }
 

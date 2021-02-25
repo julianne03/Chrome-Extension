@@ -83,7 +83,7 @@ function handleReset() {
 
 function handleClick() {
     const page_style = document.querySelector("#page-style");
-    page_style.href = "d_day.css";
+    page_style.href = "css/d_day.css";
     loadDday();
 }
 
