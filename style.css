@@ -81,19 +81,13 @@ body {
   }
 }
 
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
+.js-quote-container {
+  position: fixed;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
 }
 
-.showing {
-  animation: fadeIn 1s ease-in-out forwards;
-}
-
-.no-showing {
-  animation: fadeOut 1s ease-in-out forwards;
+.quote-text {
+  color: white;
 }
