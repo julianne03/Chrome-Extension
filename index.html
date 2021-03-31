@@ -19,8 +19,20 @@
                 <span class="date-text">2000-00-00, Sat</span>
                 </div>
                 <span class="time-text">00:00:00 PM</span>
-                <div>
-
+                <div class="input-container">
+                    <div class="js-name">
+                        <form class="js-form form">
+                          <input class="main-input" type="text" placeholder="What's your name?" />
+                        </form>
+                    </div>
+                    <h1 class="js-greetings greetings"></h1>
+                    <div class="js-todo">
+                        <form class="js-toDoForm">
+                            <input class="main-input" type="text" placeholder="Write a to do" />
+                        </form>
+                    </div>
+                    <ul class="js-toDoList"> 
+                    </ul>
                 </div>
             </div>
             <div class="js-stopwatch-container">
@@ -55,11 +67,12 @@
                 </div>
             </div>
         </div>
+
         <div class="js-quote-container">
             <p class="quote-text"></p>
         </div>
         <div class="js-weather-container">
-            <i class="wi wi-day-sunny" id="weather-icon" />
+            <i id="weather-icon" />
             <span class="weather-temperature"></span>
         </div>
         <script src="js/script.js"></script>
@@ -69,6 +82,8 @@
         <script src="js/quote.js"></script>
         <script src="js/api_key.js"></script>
         <script src="js/weather.js"></script>
+        <script src="js/greeting.js"></script>
+        <script src="js/todo.js"></script>
     </body>
 
 </html>
